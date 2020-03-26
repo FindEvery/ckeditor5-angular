@@ -9,7 +9,7 @@ import * as CKSource from '../../../ckeditor/build/cksource';
 } )
 export class WatchdogDemoComponent {
 	public Editor = CKSource.ClassicEditor;
-	@ViewChild( CKEditorComponent, { static: false } ) ckeditor?: ElementRef<CKEditorComponent>;
+	@ViewChild( CKEditorComponent ) ckeditor?: ElementRef<CKEditorComponent>;
 
 	public context: any;
 	public config: any;

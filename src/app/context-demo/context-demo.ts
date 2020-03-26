@@ -11,7 +11,7 @@ const Context = CKSource.Context;
 } )
 export class ContextDemoComponent {
 	public Editor = CKSource.ClassicEditor;
-	@ViewChild( CKEditorComponent, { static: false } ) ckeditor?: ElementRef<CKEditorComponent>;
+	@ViewChild( CKEditorComponent ) ckeditor?: ElementRef<CKEditorComponent>;
 
 	public contextConfig: any;
 	public context: any;
