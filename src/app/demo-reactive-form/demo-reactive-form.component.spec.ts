@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import { CKEditorModule } from '../../ckeditor/ckeditor.module';
@@ -9,15 +9,13 @@ describe( 'DemoReactiveFormComponent', () => {
 	let component: DemoReactiveFormComponent;
 	let fixture: ComponentFixture<DemoReactiveFormComponent>;
 
-	beforeEach( async( () => {
+	beforeEach( async () => {
 		TestBed.configureTestingModule( {
 			declarations: [ DemoReactiveFormComponent ],
 			imports: [ CKEditorModule, FormsModule, ReactiveFormsModule ]
 		} )
 			.compileComponents();
-	} ) );
 
-	beforeEach( () => {
 		fixture = TestBed.createComponent( DemoReactiveFormComponent );
 		component = fixture.componentInstance;
 		fixture.detectChanges();

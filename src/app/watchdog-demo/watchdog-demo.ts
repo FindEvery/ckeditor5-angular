@@ -28,7 +28,7 @@ export class WatchdogDemoComponent {
 		this.config = {
 			collaboration: {
 				channelId: 'foobar-baz'
-			},
+			}
 		};
 
 		this.watchdog = new CKSource.ContextWatchdog( CKSource.Context );

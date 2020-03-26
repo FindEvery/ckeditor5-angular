@@ -19,7 +19,7 @@ export class DemoReactiveFormComponent implements AfterViewInit {
 	public demoReactiveForm = new FormGroup( {
 		name: new FormControl( 'John' ),
 		surname: new FormControl( 'Doe' ),
-		description: new FormControl( '<p>A <b>really</b> nice fellow.</p>' ),
+		description: new FormControl( '<p>A <b>really</b> nice fellow.</p>' )
 	} );
 
 	public formDataPreview?: string;
